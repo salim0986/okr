@@ -46,7 +46,7 @@ A comprehensive full-stack **Objectives and Key Results (OKR) Management System*
 
 ## 📁 Project Structure
 
-\`\`\`
+```
 ├── backend/                 # NestJS Backend
 │   ├── src/
 │   │   ├── auth/           # Authentication module
@@ -74,7 +74,7 @@ A comprehensive full-stack **Objectives and Key Results (OKR) Management System*
 │   └── hooks/              # Custom React hooks
 │
 └── README.md
-\`\`\`
+```
 
 ## 🚀 Getting Started
 
