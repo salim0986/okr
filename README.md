@@ -86,18 +86,18 @@ A comprehensive full-stack **Objectives and Key Results (OKR) Management System*
 ### Backend Setup
 
 1. **Navigate to backend directory**:
-   \`\`\`bash
+   ```bash
    cd backend
-   \`\`\`
+   ```
 
 2. **Install dependencies**:
-   \`\`\`bash
+   ```bash
    npm install
-   \`\`\`
+   ```
 
 3. **Set up environment variables**:
-   Create a \`.env\` file in the backend directory:
-   \`\`\`env
+   Create a `.env` file in the backend directory:
+   ```env
    DB_HOST=localhost
    DB_PORT=5432
    DB_USERNAME=your_db_username
@@ -107,41 +107,41 @@ A comprehensive full-stack **Objectives and Key Results (OKR) Management System*
    PORT=3001
    ENVIRONMENT=development
    ADMIN_PASSWORD=your_admin_password
-   \`\`\`
+   ```
 
 4. **Run database migrations** (if applicable):
-   \`\`\`bash
+   ```bash
    npm run migration:run
-   \`\`\`
+   ```
 
 5. **Start the backend server**:
-   \`\`\`bash
+   ```bash
    npm run start:dev
-   \`\`\`
+   ```
 
 ### Frontend Setup
 
 1. **Navigate to frontend directory**:
-   \`\`\`bash
+   ```bash
    cd frontend
-   \`\`\`
+   ```
 
 2. **Install dependencies**:
-   \`\`\`bash
+   ```bash
    npm install
-   \`\`\`
+   ```
 
 3. **Set up environment variables**:
-   Create a \`.env.local\` file in the frontend directory:
-   \`\`\`env
+   Create a `.env.local` file in the frontend directory:
+   ```env
    BACKEND_URL=http://localhost:3001
    NEXT_PUBLIC_APP_URL=http://localhost:3000
-   \`\`\`
+   ```
 
 4. **Start the frontend development server**:
-   \`\`\`bash
+   ```bash
    npm run dev
-   \`\`\`
+   ```
 
 5. **Access the application**:
    Open [http://localhost:3000](http://localhost:3000) in your browser
@@ -149,39 +149,39 @@ A comprehensive full-stack **Objectives and Key Results (OKR) Management System*
 ## 🔐 API Endpoints
 
 ### Authentication
-- \`POST /api/v1/user/login\` - User login
-- \`POST /api/v1/user/register\` - User registration
+- `POST /api/v1/user/login` - User login
+- `POST /api/v1/user/register` - User registration
 
 ### Organizations
-- \`GET /api/v1/organization\` - Get organizations (role-based)
-- \`POST /api/v1/organization\` - Create organization (admin only)
-- \`GET /api/v1/organization/:id\` - Get organization by ID
-- \`PUT /api/v1/organization/:id\` - Update organization
+- `GET /api/v1/organization` - Get organizations (role-based)
+- `POST /api/v1/organization` - Create organization (admin only)
+- `GET /api/v1/organization/:id` - Get organization by ID
+- `PUT /api/v1/organization/:id` - Update organization
 
 ### Departments
-- \`GET /api/v1/department\` - Get departments (role-based)
-- \`POST /api/v1/department\` - Create department
-- \`GET /api/v1/department/organization/:orgId\` - Get departments by organization
+- `GET /api/v1/department` - Get departments (role-based)
+- `POST /api/v1/department` - Create department
+- `GET /api/v1/department/organization/:orgId` - Get departments by organization
 
 ### Teams
-- \`GET /api/v1/team\` - Get teams (role-based)
-- \`POST /api/v1/team\` - Create team
-- \`GET /api/v1/team/department/:deptId\` - Get teams by department
+- `GET /api/v1/team` - Get teams (role-based)
+- `POST /api/v1/team` - Create team
+- `GET /api/v1/team/department/:deptId` - Get teams by department
 
 ### Objectives (OKRs)
-- \`GET /api/v1/okr\` - Get objectives (role-based)
-- \`POST /api/v1/okr\` - Create objective
-- \`GET /api/v1/okr/:id\` - Get objective by ID
-- \`PUT /api/v1/okr/:id\` - Update objective
+- `GET /api/v1/okr` - Get objectives (role-based)
+- `POST /api/v1/okr` - Create objective
+- `GET /api/v1/okr/:id` - Get objective by ID
+- `PUT /api/v1/okr/:id` - Update objective
 
 ### Key Results
-- \`GET /api/v1/keyresult\` - Get key results (role-based)
-- \`POST /api/v1/keyresult\` - Create key result
-- \`GET /api/v1/keyresult/objective/:id\` - Get key results by objective
+- `GET /api/v1/keyresult` - Get key results (role-based)
+- `POST /api/v1/keyresult` - Create key result
+- `GET /api/v1/keyresult/objective/:id` - Get key results by objective
 
 ### Progress Tracking
-- \`GET /api/v1/progress\` - Get progress updates
-- \`POST /api/v1/progress\` - Create progress update
+- `GET /api/v1/progress` - Get progress updates
+- `POST /api/v1/progress` - Create progress update
 
 ## 🔒 Security Features
 
@@ -245,9 +245,9 @@ The frontend uses a comprehensive set of UI components including:
 
 ### Docker Deployment
 Use the provided Docker configuration for containerized deployment:
-\`\`\`bash
+```bash
 docker-compose up -d
-\`\`\`
+```
 
 ## 🔮 Version 1.0 - Current Features
 
